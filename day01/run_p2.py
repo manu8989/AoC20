@@ -29,5 +29,8 @@ if __name__ == "__main__":
                     c = int(line_c.strip())
                     if sums_to_2020(a, b, c):
                         print(a*b*c)
+                        print (a)
+                        print (b)
+                        print (c)
                         exit()
                         
