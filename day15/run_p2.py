@@ -22,6 +22,7 @@ if __name__ == "__main__":
         numbers[tmp] = i
         if i % (limit/100) == 0:
             print(str(100*i/limit) + '%')
+            sys.stdout.write("\033[F")
     end_time = time.time()
     print('Duration: ' + str(end_time - start_time) + 's')
     print(last_value)
